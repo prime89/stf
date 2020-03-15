@@ -1,0 +1,10 @@
+db: 
+  url: 11
+
+api:
+  port: 3000
+
+log:
+  enableFileLog: false
+  enableConsoleLog: true
+  

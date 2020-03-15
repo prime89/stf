@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var extensions_1 = require("../../common/instantiation/extensions");
+var databaseService_1 = require("../base/interface/databaseService");
+var deviceService_1 = require("../dao/deviceService");
+var userService_1 = require("../dao/userService");
+var bytedocService_1 = require("./bytedocService");
+var userService_2 = require("./impl/userService");
+var deviceService_2 = require("./impl/deviceService");
+extensions_1.registerSingleton(databaseService_1.IDatabaseService, bytedocService_1.BytedocService, false);
+extensions_1.registerSingleton(userService_1.IUserService, userService_2.UserService, true);
+extensions_1.registerSingleton(deviceService_1.IDeviceService, deviceService_2.DeviceService, true);

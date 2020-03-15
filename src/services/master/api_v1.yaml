@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  version: 0.0.1
+  title: Dora open API
+  description: Open API for Dora
+
+basePath: /api/v1
+
